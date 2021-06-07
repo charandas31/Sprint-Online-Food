@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    h1 {
+        text-align: center;
+    }
+
+    #navBar {
+        background-color: aquamarine;
+        height: 50px;
+    }
+
+    #navBar button {
+        float: right;
+        margin: 15px 8px;
+        border: none;
+        background-color: rgb(140, 127, 255);
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 15px;
+    }
+     #logInForm {
+            padding: 50px 0px;
+            width:400px;
+            
+            margin:50px auto;
+            border-radius: 10px;
+            background-color: rgb(113, 202, 61)
+        }
+        #logInForm input {
+            margin: 10px 0px;
+        }
+        #logInForm button {
+            margin-top:10px;
+            cursor: pointer;
+            padding:2.5px 15px;
+            background-color:rgb(114, 114, 243);
+            border:none;
+            border-radius:5px;
+        }
+        #logInForm > h2{
+            text-align:center;
+            margin-top: 0px;
+        }
+</style>
+</head>
+
+<body>
+    <h1>Online Food Order</h1>
+    <div id="navBar">
+        <div><button onclick="SignUp()">SignUp</button></div>
+        <div><button onclick="LogIn()">LogIn</button></div>
+        <div><button onclick="Menu()">Menu Options</button></div>
+    </div>
+    <div id="logInForm">
+        <h2>User Login</h2>
+        <center>
+            <table>
+                <tr>
+                    <td>Username :</td>
+                    <td><input type="text" id="username" placeholder="Email"></td>
+                </tr>
+                <tr>
+                    <td>Password :</td>
+                    <td><input type="password" id="pass" placeholder="Password"></td>
+                </tr>
+            </table>
+        </center>
+        <center><button onclick="log_in()">LogIn</button></center>
+    </div>
+</body>
+</html>
+<script src="logIn.js">
+
+</script>
